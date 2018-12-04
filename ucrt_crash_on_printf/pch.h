@@ -8,7 +8,20 @@
 
 #ifndef PCH_H
 #define PCH_H
+/*
+if I do this:
 
-// TODO: add headers that you want to pre-compile here
+#define _NO_CRT_STDIO_INLINE
+
+I will get this:
+
+error LNK2019: unresolved external symbol _fprintf referenced in function _main
+1>d:\GitHub\ucrt_crash_on_printf\Debug\ucrt_crash_on_printf.exe 
+: fatal error LNK1120: 1 unresolved externals
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <io.h>
+#include <fcntl.h>
 
 #endif //PCH_H

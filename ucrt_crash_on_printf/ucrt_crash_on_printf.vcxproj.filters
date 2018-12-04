@@ -26,5 +26,8 @@
     <ClCompile Include="ucrt_crash_on_printf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="c_version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
